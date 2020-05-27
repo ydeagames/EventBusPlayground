@@ -9,6 +9,9 @@
 #include "Event/GameEvents.h"
 
 
+class Bootstrap;
+
+
 // A basic game implementation that creates a D3D11 device and
 // provides a game loop.
 class Game final : public DX::IDeviceNotify, public GameEventContext
@@ -58,6 +61,9 @@ private:
 
     void CreateDeviceDependentResources();
     void CreateWindowSizeDependentResources();
+
+	// Bootstrap
+    std::unique_ptr<Bootstrap>              m_bootstrap;
 
     // Device resources.
     std::unique_ptr<DX::DeviceResources>    m_deviceResources;

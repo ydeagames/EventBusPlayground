@@ -41,17 +41,63 @@
 
 #include <DirectXMath.h>
 #include <DirectXColors.h>
+#include <DirectXCollision.h>
 
-#include <algorithm>
+// STL
 #include <exception>
 #include <memory>
 #include <stdexcept>
 
-#include <stdio.h>
+#include <cstdio>
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <iomanip>
+
+#include <fstream>
+
+#include <algorithm>
+#include <random>
+
+#include <vector>
+#include <list>
+#include <unordered_map>
+#include <unordered_set>
+#include <algorithm>
+#include <queue>
+#include <deque>
+
+#include <chrono>
+#include <locale> 
+#include <codecvt> 
+
+// DirectXTK
+#include <Keyboard.h>
+#include <Mouse.h>
+#include <SimpleMath.h>
+#include <CommonStates.h>
+#include <WICTextureLoader.h>
+#include <SpriteBatch.h>
+#include <SpriteFont.h>
+#include <Effects.h>
+#include <PrimitiveBatch.h>
+#include <VertexTypes.h>
+#include <SimpleMath.h>
+#include <SpriteBatch.h>
+#include <SpriteFont.h>
+#include <GeometricPrimitive.h>
+#include <WICTextureLoader.h>
+#include <CommonStates.h>
+#include <Effects.h>
+#include <Model.h>
 
 #ifdef _DEBUG
 #include <dxgidebug.h>
 #endif
+
+// DX
+#include "Common/DeviceResources.h"
+#include "Common/StepTimer.h"
 
 namespace DX
 {

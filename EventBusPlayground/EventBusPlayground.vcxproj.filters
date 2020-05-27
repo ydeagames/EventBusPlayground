@@ -41,6 +41,18 @@
     <ClInclude Include="Game\Bootstrap.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="Game\UI.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Controller.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MyEvents.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
@@ -57,6 +69,15 @@
       <Filter>Framework</Filter>
     </ClCompile>
     <ClCompile Include="Game\Bootstrap.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Controller.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>

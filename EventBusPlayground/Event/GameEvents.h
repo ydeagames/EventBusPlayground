@@ -8,6 +8,12 @@ class GameEventContext
 public:
 	virtual DX::DeviceResources& GetDR() = 0;
 	virtual DX::StepTimer& GetTimer() = 0;
+	
+	DirectX::SimpleMath::Vector2 GetSize()
+	{
+		auto size = GetDR().GetOutputSize();
+		return DirectX::SimpleMath::Vector2(float(size.right), float(size.bottom));
+	}
 };
 
 class GameEvent : public Event

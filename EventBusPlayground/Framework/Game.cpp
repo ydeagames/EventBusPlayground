@@ -19,8 +19,9 @@ Game::Game() noexcept(false)
     m_deviceResources = std::make_unique<DX::DeviceResources>();
     m_deviceResources->RegisterDeviceNotify(this);
 
-	// ÉuÅ[Ég
-    Bootstrap::Setup();
+	// Bootstrap
+    m_bootstrap = std::make_unique<Bootstrap>();
+    m_bootstrap->Setup();
 }
 
 Game::~Game()
