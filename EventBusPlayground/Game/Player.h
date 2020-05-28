@@ -3,7 +3,11 @@
 #include "Event/GameEvents.h"
 #include "MyEvents.h"
 
-class Player : public EventHandler<DeviceDepResEvent>, public EventHandler<RenderGameEvent>, public EventHandler<UpdateGameEvent>, public EventHandler<PlayerJumpEvent>
+class Player
+	: public EventHandler<DeviceDepResEvent>
+	, public EventHandler<RenderGameEvent>
+	, public EventHandler<UpdateGameEvent>
+	, public EventHandler<PlayerJumpEvent>
 {
 private:
 	std::unique_ptr<DirectX::SpriteBatch> sprite;

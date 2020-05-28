@@ -30,6 +30,7 @@ void Player::On(RenderGameEvent&)
 	sprite->End();
 }
 
+// UIクラスからイベントを飛ばします
 void Player::On(PlayerJumpEvent&)
 {
 	acc.y = -5.f;

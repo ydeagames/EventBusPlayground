@@ -1,7 +1,9 @@
 ﻿#pragma once
 #include "Event/GameEvents.h"
 
-class Controller : public EventHandler<UpdateGameEvent>
+// 入力コントローラー
+class Controller
+	: public EventHandler<UpdateGameEvent>
 {
 	std::unique_ptr<DirectX::Mouse> mouse;
 	std::unique_ptr<DirectX::Keyboard> keyboard;
