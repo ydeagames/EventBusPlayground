@@ -5,7 +5,6 @@
 
 #pragma once
 
-#include <unordered_map>
 #include <atomic>
 
 namespace EventBusSystem

@@ -20,14 +20,14 @@ void Controller::On(UpdateGameEvent& event)
 	{
 		// カーソルの位置取得
 		const auto state = mouseTracker.GetLastState();
-		const auto pos = DirectX::SimpleMath::Vector3(float(state.x), float(state.y), 0.f);
+		const auto pos = DirectX::SimpleMath::Vector3(float(state.x), float(state.y), 0.f); // ←これ
 
 		// ######### 穴埋め1-1 #########
 		// ClickEvent イベントを作成
 
-		// イベントに位置を代入
+		// イベントのpos変数に位置を代入 (上にあるpos)
 
-		// イベントを発火
+		// イベントを発火 (EVENT_BUSのPublish)
 
 		// ######### 穴埋め1-1 #########
 	}
