@@ -24,11 +24,11 @@ void Controller::On(UpdateGameEvent& event)
 
 		// ######### 穴埋め1-1 #########
 		// ClickEvent イベントを作成
-		ClickEvent ev;
+
 		// イベントに位置を代入
-		ev.pos = pos;
+
 		// イベントを発火
-		EVENT_BUS.Publish(ev);
+
 		// ######### 穴埋め1-1 #########
 	}
 }

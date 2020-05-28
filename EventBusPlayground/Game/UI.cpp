@@ -28,9 +28,9 @@ void UI::On(ClickEvent& event)
 		
 		// ######### 穴埋め2-1 #########
 		// PlayerJumpEvent イベントを作成
-		PlayerJumpEvent ev;
+
 		// イベントを発火
-		EVENT_BUS.Publish(ev);
+
 		// ######### 穴埋め2-1 #########
 	}
 }

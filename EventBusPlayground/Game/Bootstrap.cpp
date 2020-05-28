@@ -11,7 +11,7 @@ void Bootstrap::Setup()
 	EVENT_BUS.Subscribe<DeviceDepResEvent>(*ui);
 	// ######### 穴埋め1-2 #########
 	// ClickEventを受信
-	EVENT_BUS.Subscribe<ClickEvent>(*ui);
+
 	// ######### 穴埋め1-2 #########
 
 	// 入力コントローラー
@@ -25,6 +25,6 @@ void Bootstrap::Setup()
 	EVENT_BUS.Subscribe<UpdateGameEvent>(*player);
 	// ######### 穴埋め2-2 #########
 	// PlayerJumpEventを受信
-	EVENT_BUS.Subscribe<PlayerJumpEvent>(*player);
+
 	// ######### 穴埋め2-2 #########
 }
